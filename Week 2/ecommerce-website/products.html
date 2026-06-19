@@ -1,38 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="icon" href="images/logo.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="icon" href="images/logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products - MyEcom</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<header>
-    <nav class="navbar">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
         <div class="logo">MyEcom</div>
 
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="cart.html">Cart</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li>
+            <a href="cart.html">
+              Cart
+
+              <span id="cart-count" class="cart-count"> 0 </span>
+            </a>
+          </li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<section class="products-section">
+    <section class="products-section">
+      <h2>Our Products</h2>
 
-    <h2>Our Products</h2>
+      <div id="products-container" class="products-grid"></div>
+      <div class="filter-container">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-box"
+          placeholder="Search products..."
+        />
 
-    <div id="products-container" class="products-grid">
+        <select id="categoryFilter" class="filter-select">
+          <option value="all">All Categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Fashion">Fashion</option>
+        </select>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<script src="js/products.js"></script>
-<script src="js/main.js"></script>
-
-</body>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
