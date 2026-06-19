@@ -65,7 +65,6 @@ const forecast=function (arr){
 console.log(forecast(data1));
 
 
-
 const month=prompt('Enter the month: ');
 switch(month){
     case 'january':
